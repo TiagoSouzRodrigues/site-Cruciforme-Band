@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="imgs/logo-cruciforme-blue.png" type="image/x-icon">
+    
+    <style>
+        html, body{
+            scroll-behavior: smooth;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .icos-profile{
+            font-size: 28px;
+            color: rgb(80, 82, 82);
+            
+        }
+        ion-icon{
+            color: rgb(70, 68, 68);
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        ion-icon:hover{
+         color: rgb(138, 134, 134);
+        }
+
+    </style>
+    <title>Cruciforme Band</title>
+  </head>
+  <body>
+    <!--Header/Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav justify-content-end fixed-top">
+      <a
+        class="navbar-brand align-baseline "
+        href="https://tiagosouzrodrigues.github.io/medias--cruciforme/"
+        target="_blank"
+        
+      >
+        <img
+    
+          src="imgs/cruciforme-font.png"
+          style="width: 30%; margin: 0%;"
+          alt=""
+          style="align-items: center;"
+        />
+      </a>
+      <button
+        class="navbar-toggler "
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+        style="align-items: center;"
+      >
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(página atual)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#integrantes">Integrantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#noYoutube">No Youtube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ctts">Contatos</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a
+              class="nav-link dropdown-toggle "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Saiba Mais 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://instagram.com/cruciformestore?igshid=MmU2YjMzNjRlOQ==">Cruciforme Store</a>
+              <a class="dropdown-item" href="https://youtube.com/playlist?list=PLOJ5V3BWzR9oU2IZb8tiCvWqE1hQcmr8S&si=D-Y0Wd5HDJ9QcZSg">Músicas Autorais</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mailto:cruciforme.louvor@gmail.com" target="_blank">Nos envie um email</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!--Carrossel-->
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="imgs/img--slide.jpg"
+            alt="Primeiro Slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PIB Palmares - Sta Cruz-Rj</h5>
+            <p>Encontro da Juventude APZO</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="imgs/img--slide1.jpg"
+            alt="Segundo Slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Igreja Batista Monte Tabor - Campo Grande-Rj</h5>
+            <p>Conferência da Juventude Tropa do Monte</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="imgs/img--slide2.jpg"
+            alt="Terceiro Slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>PIB Palmares - Sta Cruz-Rj</h5>
+            <p>Encontro da Juventude APZO</p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+    <!--Sobre-->
+    <div id="sobre" class="card text-center">
+      <div class="card-header">Sobre o Cruciforme</div>
+      <div class="card-body">
+        <h5 class="card-title">O que é ser Cruciforme!?</h5>
+        <p class="card-text">
+          Em 2018, o Senhor continuou operando seu poder direcionando a igreja a
+          ter uma vida mais intencional. E o conceito que Ele nos trouxe foi :
+          Ter uma vida moldada e entregue a cruz, a cruz de Cristo, viver
+          CRUCIFORME. Ou seja, a buscar ser mais parecido com Jesus, em sua
+          essência e caráter. Outrora éramos inimigos de Deus e hoje temos o
+          direito a adoção, como filhos. Temos acesso a sermos, hoje, imagem e
+          semelhança de Cristo. E viver de maneira cruciforme é viver de maneira
+          intencional buscando ser como Cristo é! Cruciforme significa
+          exatamente isso: "moldados a uma vida de cruz, a cruz de Cristo." É
+          buscar negarmos a nós mesmo, tomarmos nossa cruz e seguir a Cristo.(Mt
+          16:24); É entender que ao reconhecermos como Senhor das nossas vidas
+          nos tornamos uma família com Cristo, o primogênito. (Rm 8:28-29); É
+          ele em nós ser a esperança da glória.(Cl 1:27) Que possamos buscar
+          sempre sermos CRUCIFORME † !
+        </p>
+        <a href="#" class="btn btn-primary">Seja Cruciforme!</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header"></div>
+      <div class="card-body text-center">
+        <blockquote class="blockquote mb-0">
+          <p>
+            “Se alguém quer ser meu seguidor, negue a si mesmo, tome sua cruz e
+            siga-me.
+          </p>
+          <footer class="blockquote-footer">
+            Jesus Cristo, <cite title="Título da fonte">Mateus 16:24</cite>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+
+    <!--Integrantes-->
+    <div  style="padding: -20px; margin-top: 80px;">
+        <h4 id="integrantes"class="text-uppercase  text-center">Formação Oficial</h4>
+      </div>
+    <div class="card-deck" style="padding: 60px;">
+      <div class="card">
+        <img
+          class="card-img-top text-center rounded"
+          src="imgs/profile-bally.jpg"
+          alt="Imagem de capa do card"
+          style="width: 100%; scale: 80%;"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">Digão Bally</h5>
+          <p class="card-text text-center">
+            Vocalista,compositor, arranjador e social-media da Banda, pregador
+            da Palavra, e um dos idealizadores do Projeto Cruciforme.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="https://instagram.com/digao_bally?igshid=MmU2YjMzNjRlOQ==" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-instagram"></ion-icon></a>
+          <a href="https://x.com/Ballydigao?t=VkgB0KzKpZTeYJPr6KYjRA&s=35" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-twitter"></ion-icon></a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top rounded"
+          src="imgs/profile-wilsom.jpg"
+          alt="Imagem de capa do card"
+          style="width: 100%; scale: 80%;"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">Wilsom Martins</h5>
+          <p class="card-text text-center">
+            Guitarrista, produtor musical,compositor,arranjador e um dos idealizadores da banda e do projeto Cruciforme
+          </p>
+        </div>
+        <div class="card-footer text-center">
+            <a href="https://instagram.com/oficial_willmusic?igshid=MmU2YjMzNjRlOQ==" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-instagram"></ion-icon></a>
+            <a href="https://x.com/WillOficialMusi?t=1jkRKrVTUOcQt7LrGusBwg&s=35" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-twitter"></ion-icon></a>
+          </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img-top rounded"
+          src="imgs/profile-tiago.jpg"
+          alt="Imagem de capa do card"
+          style="width: 100%; scale: 80%;"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">Tiago Rodrigues</h5>
+          <p class="card-text text-center">
+            Tecladista, arranjador, pregador, social-media e um dos idealizadores do projeto Cruciforme.
+          </p>
+        </div>
+        <div class="card-footer text-center">
+            <a href="https://instagram.com/ti_agorodrigues?igshid=MmU2YjMzNjRlOQ==" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-instagram"></ion-icon></a>
+            <a href="https://x.com/TiagoRod_Souza?t=V5XPcKQ_A35j8Gzs1CBOkA&s=35" target="_blank" class="card-link"><ion-icon class="icos-profile" name="logo-twitter"></ion-icon></a>
+          </div>
+      </div>
+    </div>
+
+    <!--Nossas Canções no Youtube-->
+    <div id="noYoutube" style="padding: 20px;"><button type="button" class="btn btn-danger btn-lg btn-block" style="padding: 20px; ">
+      <a href="https://tiagosouzrodrigues.github.io/site-de-videos-cruciforme/" target="_blank" style="color: aliceblue;">Assista Nossos Principais Vídeos no youtube</a>  </button></div>
+
+
+    <!--Contatos-->
+    <div id="ctts" style="padding: 20px; text-align: center;">
+      <h4 class="text-uppercase  text-center">Contatos</h4>
+      <p>Nossas mídias sociais</p>
+
+      <a href="https://wa.me/5521984504692?text=Ol%C3%A1!%20%C3%89%20aqui%20que%20entro%20em%20contato%20com%20a%20banda%20Cruciforme%3F%20" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+      <a href="https://www.youtube.com/@cruciforme." target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+      <a href="https://instagram.com/cruciforme?igshid=MzRlODBiNWFlZA==" target="_blank"><ion-icon name="logo-instagram" ></ion-icon></a>
+    </div>
+
+    <!--Footer-->
+    <div id="ctts" style="padding: 20px;">
+        <p class="text-center">Desenvolvido por <a href="https://tiagosouzrodrigues.github.io/my-social-medias/" target="_blank"><strong>&copy;2023 Tiago Rodrigues</strong></a>  </p>
+      </div>
+
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
