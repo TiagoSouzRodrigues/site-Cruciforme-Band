@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+ <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,11 +9,15 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="imgs/logo-cruciforme-blue.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     
     <style>
         html, body{
             scroll-behavior: smooth;
             overflow-x: hidden;
+          font-family: 'Lexend', sans-serif;
         }
         a{
             text-decoration: none;
@@ -34,6 +37,84 @@
         ion-icon:hover{
          color: rgb(138, 134, 134);
         }
+      
+          .btn-vak {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
 
     </style>
     <title>Cruciforme Band</title>
@@ -82,7 +163,7 @@
             <a class="nav-link" href="#integrantes">Integrantes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#noYoutube">No Youtube</a>
+            <a class="nav-link" href="#noYoutube">Youtube</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#ctts">Contatos</a>
@@ -107,17 +188,7 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Pesquisar"
-            aria-label="Pesquisar"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Pesquisar
-          </button>
-        </form>
+   
       </div>
     </nav>
 
@@ -183,7 +254,7 @@
     </div>
      <!--Modal vakinha-->
       <!-- Botão para acionar modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo" style="position: fixed; bottom: 30px; right: -10px; z-index: 9999999; background-color: rgba(247, 77, 74, 0.626);border-color: red;">
+<button type="button" class="btn btn-primary btn-vak" data-toggle="modal" data-target="#modalExemplo" style="position: fixed; bottom: 30px; right: -10px; z-index: 9999999; background-color: rgba(247, 77, 74, 0.626);border-color: red;">
     Abençoe o Cruciforme 🫶 
   </button>
   
