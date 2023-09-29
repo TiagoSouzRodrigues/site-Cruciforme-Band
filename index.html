@@ -71,6 +71,42 @@
           transform: scale(1);
         }
       }
+     .video{
+        margin: 2px;
+        padding-bottom: 12.5%;
+        position: relative;
+
+      }
+
+      .video > iframe{
+        position: absolute;
+        top: 5%;
+        width: 90%;
+        height: 90%;
+      
+      }
+
+      .btn-youtube{
+        width: 90vw;
+      }
+
+      .footer-txt{
+        font-size: 14px;
+      }
+
+      @media(min-width:780px){
+       .video{
+        width: 50%;
+        height: 50%;
+        left: 25%;
+        
+       }
+
+       .btn-youtube{
+        width: 51.5%;
+        margin-left:24.5% ;
+       }
+      }
     </style>
     <title>Cruciforme Band</title>
   </head>
@@ -266,7 +302,7 @@
       data-target="#modalExemplo"
       style="
         position: fixed;
-        bottom: 30px;
+        bottom: 56px;
         right: -10px;
         z-index: 9999999;
         background-color: rgba(247, 77, 74, 0.626);
