@@ -27,6 +27,16 @@
         overflow-x: hidden;
         font-family: "Lexend", sans-serif;
       }
+      .dropdown-item {
+        display: flex;
+        align-items: center;
+      }
+
+      .icon-drop {
+        font-size: 22px;
+        margin-left: -19px;
+      }
+
       a {
         text-decoration: none;
       }
@@ -71,41 +81,51 @@
           transform: scale(1);
         }
       }
-     .video{
+
+      .card-img-top:hover :not(:hover) {
+        opacity: 0;
+        transform: scale(0.2);
+      }
+
+      .card:hover {
+        transition: ease-in-out .2s;
+        box-shadow: 0 0 10px 10px rgba(1, 2, 3, 0.146);
+      }
+
+      
+
+      .video {
         margin: 2px;
         padding-bottom: 12.5%;
         position: relative;
-
       }
 
-      .video > iframe{
+      .video > iframe {
         position: absolute;
         top: 5%;
         width: 90%;
         height: 90%;
-      
       }
 
-      .btn-youtube{
+      .btn-youtube {
         width: 90vw;
       }
 
-      .footer-txt{
+      .footer-txt {
         font-size: 14px;
       }
 
-      @media(min-width:780px){
-       .video{
-        width: 50%;
-        height: 50%;
-        left: 25%;
-        
-       }
+      @media (min-width: 780px) {
+        .video {
+          width: 50%;
+          height: 50%;
+          left: 25%;
+        }
 
-       .btn-youtube{
-        width: 51.5%;
-        margin-left:24.5% ;
-       }
+        .btn-youtube {
+          width: 51.5%;
+          margin-left: 24.5%;
+        }
       }
     </style>
     <title>Cruciforme Band</title>
@@ -173,17 +193,22 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Saiba Mais
+              Mais
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a
                 class="dropdown-item"
                 href="https://instagram.com/cruciformestore?igshid=MmU2YjMzNjRlOQ=="
+                ><ion-icon name="shirt-outline" class="icon-drop"></ion-icon
                 >Cruciforme Store</a
               >
               <a
                 class="dropdown-item"
                 href="https://youtube.com/playlist?list=PLOJ5V3BWzR9oU2IZb8tiCvWqE1hQcmr8S&si=D-Y0Wd5HDJ9QcZSg"
+                ><ion-icon
+                  name="musical-notes-outline"
+                  class="icon-drop"
+                ></ion-icon
                 >Músicas Autorais</a
               >
               <div class="dropdown-divider"></div>
@@ -191,8 +216,16 @@
                 class="dropdown-item"
                 href="mailto:cruciforme.louvor@gmail.com"
                 target="_blank"
-                >Nos envie um email</a
+                style="background-color: rgb(186, 186, 186); color: whitesmoke"
               >
+                <ion-icon
+                  name="mail-outline"
+                  class="icon-drop"
+                  style="color: aliceblue"
+                >
+                </ion-icon>
+                Nos envie um email
+              </a>
             </div>
           </li>
         </ul>
@@ -397,8 +430,8 @@
     </div>
 
     <!--Integrantes-->
-    <div id="integrantes"  style="padding: -20px; margin-top: 80px">
-      <h4  class="text-uppercase text-center">
+    <div style="padding: -20px; margin-top: 80px">
+      <h4 id="integrantes" class="text-uppercase text-center">
         Formação Oficial
       </h4>
     </div>
@@ -440,7 +473,7 @@
           style="width: 100%; scale: 80%"
         />
         <div class="card-body">
-          <h5 class="card-title text-center">Wilsinho Martins</h5>
+          <h5 class="card-title text-center">Wilson Martins</h5>
           <p class="card-text text-center">
             Guitarrista, produtor musical,compositor,arranjador e um dos
             idealizadores da banda e do projeto Cruciforme
@@ -493,31 +526,33 @@
     </div>
 
     <!--Nossas Canções no Youtube-->
-      <h4 id="noYoutube" class="text-uppercase text-center">
-        Canção UNIDADE
-      </h4>
-    <div class="embed-responsive embed-responsive-21by9">
-    
-      <iframe class="embed-responsive-item" width="560" height="315"  src="https://www.youtube.com/embed/n3B7GkvG2lM?si=FF9lsU-yA7IjOJdI&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h4 id="noYoutube" class="text-uppercase text-center">Canção UNIDADE</h4>
+    <div class="embed-responsive embed-responsive-21by9 video">
+      <iframe
+        class="embed-responsive-item"
+        width="360"
+        height="115"
+        src="https://www.youtube.com/embed/n3B7GkvG2lM?si=FF9lsU-yA7IjOJdI&amp;start=12"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe>
     </div>
-    <div  style="padding: 20px">
+    <div style="padding: 20px">
       <button
         type="button"
-        class="btn btn-danger btn-lg btn-block"
+        class="btn btn-danger btn-lg btn-block btn-youtube"
         style="padding: 20px"
       >
         <a
           href="https://www.youtube.com/@cruciforme."
           target="_blank"
           style="color: aliceblue"
-          > <p class="text-center">Assista no Youtube</p>
-          </a
         >
+          <p class="text-center" style="margin-top: 20px">Assista no Youtube</p>
+        </a>
       </button>
     </div>
-
-    
-    
 
     <!--Contatos-->
     <div id="ctts" style="padding: 20px; text-align: center">
@@ -541,7 +576,7 @@
 
     <!--Footer-->
     <div id="ctts" style="padding: 20px">
-      <p class="text-center">
+      <p class="text-center footer-txt">
         Desenvolvido por
         <a
           href="https://tiagosouzrodrigues.github.io/my-social-medias/"
